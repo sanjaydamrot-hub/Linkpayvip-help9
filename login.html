@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - LinkPay VIP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page center">
+    <section class="card form-card">
+      <div class="brand"><div class="logo-mark">VIP</div><div>LinkPay</div></div>
+      <h1>Login</h1>
+
+      <form id="loginForm">
+        <label>Phone Number</label>
+        <div class="phone-row">
+          <span class="prefix">+91</span>
+          <input id="loginPhone" inputmode="numeric" maxlength="10" required placeholder="10 digit mobile number">
+        </div>
+
+        <label>Password</label>
+        <input id="loginPassword" type="password" required placeholder="Enter password">
+
+        <label>6 Digit PIN</label>
+        <input id="pin" inputmode="numeric" maxlength="6" required placeholder="Enter PIN">
+
+        <label>OTP Code</label>
+        <div class="otp-row">
+          <input id="loginOtp" inputmode="numeric" maxlength="6" required placeholder="6 digit OTP">
+          <button type="button" class="send-btn" id="loginSend">Send</button>
+        </div>
+        <small id="loginTimer"></small>
+
+        <button class="btn full" type="submit">Login</button>
+        <div id="loginMessage" class="message"></div>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
